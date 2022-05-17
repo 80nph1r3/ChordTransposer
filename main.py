@@ -15,6 +15,6 @@ def transposer(tones, chord):
 
 
 if __name__ == '__main__':
-    for chord in enumerate(current_chords):
-        current_chords[chord[0]] = transposer(-1, chord[1])
+    for index, chord in enumerate(current_chords):
+        current_chords[index] = transposer(-5, chord)
     print(*current_chords)
